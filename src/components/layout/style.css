@@ -1,0 +1,52 @@
+.clearButton{
+    float: right;
+}
+
+.header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: aquamarine;
+}
+
+.footer{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: aquamarine;
+    margin-top: 30px;
+}
+
+.button{
+    float: right;
+}
+
+.rowlist{
+    border: 1px solid black;
+    width: 500px;
+}
+
+.listbody{
+    display:inline-block;
+}
+
+a:link, a:visited {
+    background-color: plum;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(0, 132, 255);
+  }
+
+li{
+    margin-top: 15px;
+}
+  .textarea{
+      width: 300px;
+      height: 200px;;
+  }
