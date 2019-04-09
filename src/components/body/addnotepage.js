@@ -10,9 +10,9 @@ class AddNote extends Component{
 
         //todo: get session storage
         let titlesession = JSON.parse(sessionStorage.getItem('titlesession'));
-        if(!titlesession){
-            titlesession = []
-        };
+        // if(!titlesession){
+        //     titlesession = []
+        // };
         let notesession = JSON.parse(sessionStorage.getItem('notesession'));
         
 
@@ -21,7 +21,7 @@ class AddNote extends Component{
             list = []
         };
         this.state={
-                title:'',
+                title:titlesession,
                 note:notesession,
                 list:list
             };
@@ -83,7 +83,7 @@ class AddNote extends Component{
         return(
             <div>
                 <p>Title</p>
-                <input  onChange={this.onTitleInputChange.bind(this)}/>
+                <input value={this.state.title} onChange={this.onTitleInputChange.bind(this)}/>
                 <p>Detail:</p>
                 <textarea value={this.state.note} className="textarea" onChange={this.onNoteInputChange.bind(this)}/>
                 <br />
